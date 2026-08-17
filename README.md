@@ -1,76 +1,67 @@
-# Velvet Flora Bloom
+# Velvet Flora 
 
-Build a premium, elegant, and responsive React web application for a handcrafted pipe-cleaner flower boutique named "Velvet Flora". Use Tailwind CSS for styling and Lucide React for icons. The vibe should be luxurious, handcrafted, and welcoming.
+A premium, elegant, and responsive React web application designed and developed by **InnoByte Solutions** for a handcrafted pipe-cleaner flower boutique named "Velvet Flora". 
 
-**Design System:**
+Built with modern web technologies including React, Tailwind CSS, and Lucide React icons, the platform reflects a luxurious, handcrafted, and welcoming vibe tailored to the client's brand identity.
 
-- Primary Color: Deep Brand Purple (#4A0E4E)
+---
 
-- Accent Color: Elegant Gold (#D4AF37)
+## 🎨 Design System
 
-- Background: Soft off-white/beige (#FAFAF7)
+- **Primary Color:** Deep Brand Purple (`#4A0E4E`)
+- **Accent Color:** Elegant Gold (`#D4AF37`)
+- **Background:** Soft off-white/beige (`#FAFAF7`)
+- **Typography:** Elegant Serif for headings, clean Sans-serif for body text.
 
-- Typography: Elegant Serif for headings, clean Sans-serif for body text.
+---
 
-**Routing & Layout:**
+## 🏗️ Architecture & Features
+git add README.md
+Designed with a seamless user experience in mind, featuring a fixed sticky Header, a dynamic main content area, and a comprehensive Footer. 
 
-Create a layout with a fixed sticky Header, a dynamic main content area, and a Footer. Include routing for two pages: "Home" (/) and "About Us" (/about).
+### 1. Header Component
+- **Brand Identity:** "Velvet Flora" image/text logo integrated on the left.
+- **Navigation (Desktop):** Intuitive links for "Home" and "About Us" with elegant gold hover effects.
+- **Navigation (Mobile):** Responsive hamburger menu for seamless mobile browsing.
 
-**1. Header Component:**
+### 2. Home Page (Main Landing)
+- **Hero Section:** Features a light background with the bold heading "Flowers That Never Fade." Includes a highly visible Gold Call-to-Action (CTA) button driving users directly to WhatsApp for orders.
+- **Gallery Section:** Titled "Our Creations" with a responsive CSS grid displaying product cards (aspect-square, soft shadows, and hover scale effects).
+- **Reels Section:** A dedicated dark purple section titled "Watch The Magic", featuring automated, muted vertical videos to showcase the handcrafted process.
 
-- Left: "Velvet Flora" text logo in Serif, Bold, Purple.
+### 3. About Us Page
+- **Our Story:** A clean, centered layout featuring a premium white card with soft shadows. It details the journey of Velvet Flora and their dedication to 100% handcrafted pipe-cleaner art.
+- **Get In Touch:** A dedicated contact card allowing users to quickly request custom handcrafted bouquets via direct WhatsApp integration.
 
-- Right (Desktop): Links for "Home" and "About Us" with gold hover effects.
+### 4. Footer Component
+- **Design:** Dark purple background with white and gold accents.
+- **Content:** Brand bio, copyright information, and quick links to social platforms (Instagram) and direct messaging (WhatsApp).
 
-- Right (Mobile): Hamburger menu icon.
+---
 
-**2. Home Page (Main Landing):**
+## 💻 Tech Stack
 
-- **Hero Section:** Light background. Big bold heading "Flowers That Never Fade." Subtext: "Handcrafted pipe-cleaner blooms for gifts, decor, and special moments." Call to action (CTA): A large Gold pill-shaped button saying "Order on WhatsApp" with a MessageCircle icon. The button should link to `https://wa.me/919893264815?text=Hello%20Velvet%20Flora!%20I%20loved%20your%20creations%20and%20want%20to%20place%20an%20order.`
+- **Frontend:** React.js, TanStack Router
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **Development & Build:** Vite
+- **Developed by:** InnoByte Solutions
 
-- **Gallery Section:** Title "Our Creations" with Sparkle icons. Subtext "Take a screenshot of what you love and send it to us!". A responsive CSS grid with 6 placeholder cards (aspect-square, gray background, soft shadows, hover scale effects).
+---
 
-- **Reels Section:** Dark Purple background section. Title "Watch The Magic" with Heart icons in gold. Flex container with 2 vertical placeholder cards (w-[300px] h-[533px]) representing Instagram reels.
+## 🚀 Local Development
 
-**3. About Us Page:**
-
-- Clean, centered layout on a light background. 
-
-- A white card in the center with a soft shadow. Title: "Our Story" (Purple, Serif).
-
-- Text: "Welcome to Velvet Flora. What started as a small creative hobby has blossomed into a passion for crafting timeless pieces of art. Every single flower and bouquet is 100% handcrafted using high-quality pipe cleaners. We pour our patience, love, and creativity into every petal to ensure your memories last forever."
-
-**4. Footer Component:**
-
-- Dark purple background, white text.
-
-- Title "Velvet Flora" in gold.
-
-- Short bio text below it.
-
-- Flex container with two text links (font-medium, uppercase, tracking-wide, gold hover effect): "INSTAGRAM" (links to instagram.com) and "WHATSAPP" (with MessageCircle icon, links to `https://wa.me/919893264815`).
-
-- Bottom border with copyright text "© 2026 Velvet Flora. All rights reserved."
-
-Ensure the code is clean, modular, and the UI looks stunning right out of the box with proper padding, margins, and smooth transitions.
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/197fd148-89fc-492a-8d70-19d093f49403).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+To run this project locally, ensure you have Node.js and npm installed.
 
 ```sh
+# Clone the repository
 git clone <this-repository-url>
+
+# Navigate into the project directory
 cd <repository-name>
-npm i
+
+# Install dependencies
+npm install
+
+# Start the local development server
 npm run dev
-```
