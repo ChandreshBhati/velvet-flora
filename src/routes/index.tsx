@@ -12,8 +12,7 @@ import creation6 from "../assets/creation-6.jpg";
 import reel1 from "../assets/reel1.mp4";
 import reel2 from "../assets/reel2.mp4";
 
-const WHATSAPP_LINK =
-  "https://wa.link/esv9aq";
+const WHATSAPP_LINK = "https://wa.link/esv9aq";
 
 const creations = [
   { src: creation1, alt: "Handcrafted pipe-cleaner lavender roses in a glass vase" },
@@ -32,8 +31,7 @@ const testimonials = [
     role: "Indore",
   },
   {
-    quote:
-      "Myy Mom was really happy with this gift. Thank you @velvetflora.1111 ✨",
+    quote: "Myy Mom was really happy with this gift. Thank you @velvetflora.1111 ✨",
     name: "Aryan Singh",
     role: "Indore",
   },
@@ -86,8 +84,8 @@ function HomePage() {
               Flowers That Never Fade.
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground sm:text-xl lg:mx-0">
-              Handcrafted pipe-cleaner blooms for gifts, decor, and special
-              moments — made petal by petal, by hand.
+              Handcrafted pipe-cleaner blooms for gifts, decor, and special moments — made petal by
+              petal, by hand.
             </p>
             <a
               href="https://www.instagram.com/velvetflora.1111?igsh=MTQ2cmg2NmxzN2puMw=="
@@ -167,9 +165,8 @@ function HomePage() {
                   Gift Beauty, Share Joy
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                  Order any bouquet this season and receive complimentary luxury
-                  gift wrapping with a handwritten note — crafted to make your
-                  moment unforgettable.
+                  Order any bouquet this season and receive complimentary luxury gift wrapping with
+                  a handwritten note — crafted to make your moment unforgettable.
                 </p>
                 <ul className="mt-6 space-y-2 text-sm text-foreground">
                   <li>• Free gift wrapping</li>
@@ -232,8 +229,7 @@ function HomePage() {
               Loved By Our Customers
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
-              Little notes from the people who welcomed our blooms into their
-              homes.
+              Little notes from the people who welcomed our blooms into their homes.
             </p>
           </div>
 
@@ -248,9 +244,7 @@ function HomePage() {
                   {t.quote}
                 </blockquote>
                 <figcaption className="mt-6 border-t border-border pt-4">
-                  <p className="font-heading text-lg font-semibold text-primary">
-                    {t.name}
-                  </p>
+                  <p className="font-heading text-lg font-semibold text-primary">{t.name}</p>
                   <p className="text-sm text-muted-foreground">{t.role}</p>
                 </figcaption>
               </figure>
@@ -266,8 +260,7 @@ function HomePage() {
             Ready To Order Your Forever Bouquet?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            Message us on WhatsApp with the design you love and we will craft it
-            just for you.
+            Message us on WhatsApp with the design you love and we will craft it just for you.
           </p>
           <a
             href={WHATSAPP_LINK}

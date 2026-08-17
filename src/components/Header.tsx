@@ -23,9 +23,9 @@ export function Header() {
           to="https://www.instagram.com/velvetflora.1111"
           className="transition-opacity hover:opacity-80"
         >
-          <img 
-            src={logoImage} 
-            alt="Velvet Flora Logo" 
+          <img
+            src={logoImage}
+            alt="Velvet Flora Logo"
             className="h-10 w-auto object-contain" // h-10 sets height, w-auto maintains aspect ratio
           />
         </Link>

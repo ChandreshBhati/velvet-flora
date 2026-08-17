@@ -7,18 +7,17 @@ export function Footer() {
     <footer className="w-full bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center">
-          
           {/* Bada Logo Image */}
-          <img 
-            src={logoImage} 
-            alt="Velvet Flora Logo" 
-            className="h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" 
+          <img
+            src={logoImage}
+            alt="Velvet Flora Logo"
+            className="h-24 w-auto object-contain transition-transform duration-300 hover:scale-105"
           />
-          
+
           {/* Nayi Lines */}
           <p className="mt-5 max-w-md text-sm leading-relaxed text-primary-foreground/80">
-            Handcrafted pipe-cleaner blooms, made with love. 
-            Everlasting beauty for your everyday life and forever memories.
+            Handcrafted pipe-cleaner blooms, made with love. Everlasting beauty for your everyday
+            life and forever memories.
           </p>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-6">
