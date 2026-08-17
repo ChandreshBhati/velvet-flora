@@ -2,6 +2,7 @@ import { QueryClient } from "@tanstack/react-query";
 import { createRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 
 export const getRouter = () => {
@@ -21,6 +22,16 @@ export function App() {
     <>
       {/* Aapka baaki app code (Header, Outlet, Footer etc.) */}
       <Analytics />
+    </>
+  );
+}
+
+export function App() {
+  return (
+    <>
+      {/* Aapka baaki app code */}
+      <Analytics />
+      <SpeedInsights />
     </>
   );
 }
