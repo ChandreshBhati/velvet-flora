@@ -1,0 +1,178 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Velvet Flora design system.
+ *
+ * Brand colors:
+ * - Primary: Deep Brand Purple #4A0E4E
+ * - Accent: Elegant Gold #D4AF37
+ * - Background: Soft off-white/beige #FAFAF7
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-heading);
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.625rem;
+  --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --background: #FAFAF7;
+  --foreground: #1A1A1A;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A1A;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A1A1A;
+  --primary: #4A0E4E;
+  --primary-foreground: #FAFAF7;
+  --secondary: #F4F0EC;
+  --secondary-foreground: #4A0E4E;
+  --muted: #F4F0EC;
+  --muted-foreground: #6B5B6D;
+  --accent: #D4AF37;
+  --accent-foreground: #1A1A1A;
+  --destructive: #DC2626;
+  --destructive-foreground: #FAFAF7;
+  --border: #E8E0DA;
+  --input: #E8E0DA;
+  --ring: #D4AF37;
+  --chart-1: #4A0E4E;
+  --chart-2: #D4AF37;
+  --chart-3: #6B5B6D;
+  --chart-4: #F4F0EC;
+  --chart-5: #1A1A1A;
+  --sidebar: #4A0E4E;
+  --sidebar-foreground: #FAFAF7;
+  --sidebar-primary: #D4AF37;
+  --sidebar-primary-foreground: #4A0E4E;
+  --sidebar-accent: #5A1E5E;
+  --sidebar-accent-foreground: #FAFAF7;
+  --sidebar-border: #FFFFFF20;
+  --sidebar-ring: #D4AF37;
+}
+
+.dark {
+  --background: #1A1A1A;
+  --foreground: #FAFAF7;
+  --card: #2A2A2A;
+  --card-foreground: #FAFAF7;
+  --popover: #2A2A2A;
+  --popover-foreground: #FAFAF7;
+  --primary: #6B2E6F;
+  --primary-foreground: #FAFAF7;
+  --secondary: #3A2A3C;
+  --secondary-foreground: #FAFAF7;
+  --muted: #3A2A3C;
+  --muted-foreground: #C4B0C6;
+  --accent: #D4AF37;
+  --accent-foreground: #1A1A1A;
+  --destructive: #EF4444;
+  --destructive-foreground: #FAFAF7;
+  --border: #FFFFFF20;
+  --input: #FFFFFF20;
+  --ring: #D4AF37;
+  --chart-1: #6B2E6F;
+  --chart-2: #D4AF37;
+  --chart-3: #C4B0C6;
+  --chart-4: #3A2A3C;
+  --chart-5: #FAFAF7;
+  --sidebar: #2A2A2A;
+  --sidebar-foreground: #FAFAF7;
+  --sidebar-primary: #D4AF37;
+  --sidebar-primary-foreground: #4A0E4E;
+  --sidebar-accent: #3A2A3C;
+  --sidebar-accent-foreground: #FAFAF7;
+  --sidebar-border: #FFFFFF20;
+  --sidebar-ring: #D4AF37;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@keyframes velvet-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@utility page-transition {
+  animation: velvet-fade-in 0.5s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-transition {
+    animation: none;
+  }
+}
