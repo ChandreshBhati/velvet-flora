@@ -176,3 +176,12 @@
     animation: none;
   }
 }
+
+/* --- Velvet Flora: Hide Lovable Badge --- */
+div[id*="lovable"], 
+div[class*="lovable"],
+iframe[src*="lovable"] {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+} 

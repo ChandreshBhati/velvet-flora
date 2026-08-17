@@ -9,9 +9,11 @@ import creation3 from "../assets/creation-3.jpg";
 import creation4 from "../assets/creation-4.jpg";
 import creation5 from "../assets/creation-5.jpg";
 import creation6 from "../assets/creation-6.jpg";
+import reel1 from "../assets/reel1.mp4";
+import reel2 from "../assets/reel2.mp4";
 
 const WHATSAPP_LINK =
-  "https://wa.me/919893264815?text=Hello%20Velvet%20Flora!%20I%20loved%20your%20creations%20and%20want%20to%20place%20an%20order.";
+  "https://wa.link/esv9aq";
 
 const creations = [
   { src: creation1, alt: "Handcrafted pipe-cleaner lavender roses in a glass vase" },
@@ -25,21 +27,21 @@ const creations = [
 const testimonials = [
   {
     quote:
-      "The bouquet arrived even more beautiful than the photos. It has been on my desk for months and still looks brand new.",
+      "Absolutely loved these handmade sunflowers! 🌻✨ Quality bohot acchi hai aur dekhne mein bohot hi pyaare lagte hain. And affordable hai bohot Perfect for room decor or gifting. Thank you so much!",
     name: "Ananya S.",
-    role: "Bhopal",
-  },
-  {
-    quote:
-      "I ordered a custom gift box for my mother's birthday. The detailing in every petal is unbelievable — she cried happy tears.",
-    name: "Rohit M.",
     role: "Indore",
   },
   {
     quote:
-      "Velvet Flora made our wedding table decor unforgettable. Elegant, personal, and truly one of a kind.",
-    name: "Priya & Karan",
-    role: "Jabalpur",
+      "Myy Mom was really happy with this gift. Thank you @velvetflora.1111 ✨",
+    name: "Aryan Singh",
+    role: "Indore",
+  },
+  {
+    quote:
+      "Itna beautiful handmade bouquet expect nahi kiya tha. 😍 Sabko bahut pasand aaya. Thank you Velvet Flora! Highly recommended. ✨❤️",
+    name: "Nirmala Rathore",
+    role: "Indore",
   },
 ];
 
@@ -88,7 +90,7 @@ function HomePage() {
               moments — made petal by petal, by hand.
             </p>
             <a
-              href="#order"
+              href="https://www.instagram.com/velvetflora.1111?igsh=MTQ2cmg2NmxzN2puMw=="
               className="mt-10 inline-flex items-center gap-3 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
             >
               Explore Our Creations
@@ -170,7 +172,7 @@ function HomePage() {
                   moment unforgettable.
                 </p>
                 <ul className="mt-6 space-y-2 text-sm text-foreground">
-                  <li>• Free gold-ribbon gift wrapping</li>
+                  <li>• Free gift wrapping</li>
                   <li>• Personalised handwritten card</li>
                   <li>• Custom colours on request</li>
                 </ul>
@@ -203,17 +205,17 @@ function HomePage() {
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-8">
-            {[creation1, creation4].map((src, i) => (
+            {[reel1, reel2].map((videoSrc, i) => (
               <div
                 key={i}
                 className="h-[533px] w-[300px] max-w-[calc(100vw-2rem)] overflow-hidden rounded-2xl bg-primary-foreground/10 shadow-2xl transition-transform duration-500 hover:scale-[1.02]"
               >
-                <img
-                  src={src}
-                  alt="Behind the scenes of a Velvet Flora handcrafted bouquet"
-                  loading="lazy"
-                  width={900}
-                  height={900}
+                <video
+                  src={videoSrc}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="h-full w-full object-cover"
                 />
               </div>

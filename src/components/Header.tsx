@@ -2,6 +2,10 @@ import { useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 
+// Assuming you have your logo in the assets folder
+// Adjust the path to match your file structure
+import logoImage from "../assets/logo.png"; // <-- Add this import
+
 const navLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About Us" },
@@ -14,11 +18,16 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-sm supports-[backdrop-filter]:bg-background/80">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
+        {/* Replaced text with image */}
         <Link
-          to="/"
-          className="font-heading text-2xl font-bold tracking-tight text-primary transition-opacity hover:opacity-80"
+          to="https://www.instagram.com/velvetflora.1111"
+          className="transition-opacity hover:opacity-80"
         >
-          Velvet Flora
+          <img 
+            src={logoImage} 
+            alt="Velvet Flora Logo" 
+            className="h-10 w-auto object-contain" // h-10 sets height, w-auto maintains aspect ratio
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

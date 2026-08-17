@@ -1,21 +1,29 @@
 import { MessageCircle } from "lucide-react";
+// Yahan dhyan rakhein ki humne .png kar diya hai background hate hue logo ke liye
+import logoImage from "../assets/logo.png";
 
 export function Footer() {
   return (
     <footer className="w-full bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center">
-          <h3 className="font-heading text-2xl font-bold text-accent">
-            Velvet Flora
-          </h3>
-          <p className="mt-3 max-w-md text-sm text-primary-foreground/80">
-            Handcrafted pipe-cleaner flowers that bring everlasting beauty to
-            your most cherished moments.
+          
+          {/* Bada Logo Image */}
+          <img 
+            src={logoImage} 
+            alt="Velvet Flora Logo" 
+            className="h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" 
+          />
+          
+          {/* Nayi Lines */}
+          <p className="mt-5 max-w-md text-sm leading-relaxed text-primary-foreground/80">
+            Handcrafted pipe-cleaner blooms, made with love. 
+            Everlasting beauty for your everyday life and forever memories.
           </p>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-6">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/velvetflora.1111?igsh=MTQ2cmg2NmxzN2puMw=="
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs font-medium uppercase tracking-widest text-primary-foreground/90 transition-colors duration-200 hover:text-accent"
@@ -23,7 +31,7 @@ export function Footer() {
               Instagram
             </a>
             <a
-              href="https://wa.me/919893264815"
+              href="https://wa.link/esv9aq"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-xs font-medium uppercase tracking-widest text-primary-foreground/90 transition-colors duration-200 hover:text-accent"
